@@ -43,16 +43,29 @@ Constraints: 1 ≤ row ≤ nRows.
 The number of people who sit strictly behind you and in your column or to the left.
 
 */
-
+/* 
 function seatsInTheater(nCols, nRows, col, row) {
     return (nCols-col+1) * (nRows - row);  
   }
 
     seatsInTheater(16, 11, 5, 3)
-    
 
-/*  Example
+
+ Example
 For nCols = 16, nRows = 11, col = 5 and row = 3, the output should be
 
 seatsInTheater(nCols, nRows, col, row) === 96
-Here is what the theater looks like:*/
+Here is what the theater looks like:        */
+
+
+
+
+
+function seatsInTheater(nCols, nRows, col, row) {
+    var totalObstructedRows = nRows - row;
+    var totalObstructedCols = nCols - (col - 1);
+    
+    return totalObstructedRows * totalObstructedCols;
+  }
+
+  
