@@ -34,13 +34,13 @@ const data = [
 
 
 
-// function getNames(arr) {
-//     let names = [];
-//     for (var i = 0; i < arr.length; i++) {
-//         names.push(arr[i].name);
-//     }
-//     return names;
-// }
+ function getNames(arr) {
+     let names = [];
+     for (var i = 0; i < arr.length; i++) {
+         names.push(arr[i].name);
+     }
+     return names;
+ }
 
 // function getAge25(arr) {
 //     let ageOver25 = [];
