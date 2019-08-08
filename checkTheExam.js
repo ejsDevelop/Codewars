@@ -21,3 +21,4 @@ const checkExam = (answers, responses) => {
 
   return score > 0 ? score : 0
 }
+
